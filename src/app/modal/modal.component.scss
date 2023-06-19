@@ -1,0 +1,26 @@
+.dimmer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .model {
+    background-color: white;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transform: scale(0.75);
+    opacity: 0.5;
+    transition: all ease-out 200ms;
+    padding: 1rem;
+  }
+  .active {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

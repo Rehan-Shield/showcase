@@ -1,0 +1,208 @@
+<div class="card">
+  <div class="heading">
+    <div class="head-image">
+      <img src="assets/bni.png" />
+    </div>
+    <div class="heading-text">
+      <div class="card-name">Bahrain National Insurance</div>
+      <div class="card-tags">
+        <div class="tag">Comprehensive</div>
+        <div class="tag">Third Party Liability</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="products">
+  <div class="product">
+    <div class="product-heading">
+      <div>
+        <div class="product-name">PLIC Motor Insurance</div>
+        <div class="terms-and-conditions">
+          <mat-icon>arrow_right_alt</mat-icon>
+          <p>Terms and conditions</p>
+        </div>
+      </div>
+      <div>
+        <div class="product-price">{{ 144 | number : "0.3-3" }} BD</div>
+        <div class="tag">Comprehensive</div>
+      </div>
+    </div>
+    <div class="coverages" [appShow]="showMore">
+      <div class="coverages-heading">
+        <div>Coverages</div>
+        <mat-icon class="icon">info</mat-icon>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Third Party Liability Cover</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Accidental collision or overturning, fire and more</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Insured’s natural death</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Car replacement up to 7 days</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Car replacement up to 7 days</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Pick Up and Delivery services</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Compulsory Excess 50 BD</p>
+      </div>
+      <div class="additional-coverages">
+        <button (click)="additionalCoverages = true">
+          Additional Coverages
+        </button>
+      </div>
+      <div
+        class="bottom-sheet"
+        [ngClass]="{ 'active-bottom-sheet': additionalCoverages }"
+      >
+        <div class="bottom-sheet-heading">
+          <div class="bottom-sheet-name">Additional Coverages</div>
+          <mat-icon class="info-icon">info</mat-icon>
+          <mat-icon class="close-icon" (click)="additionalCoverages = false"
+            >close</mat-icon
+          >
+        </div>
+        <div class="bottom-sheet-options">
+          <label class="option" for="option1">
+            <input id="option1" type="checkbox" />
+            <p>
+              Geographical Extension123 -
+              <span>{{ 25 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option2">
+            <input id="option2" type="checkbox" />
+            <p>
+              Natural Perils -
+              <span>{{ 15 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option3">
+            <input id="option3" type="checkbox" />
+            <p>
+              Windscreen Coverage -
+              <span>{{ 10 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option4">
+            <input id="option4" type="checkbox" />
+            <p>
+              Personal Accident -
+              <span>{{ 10 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+        </div>
+      </div>
+      <div class="show-more" (click)="showMore = !showMore">
+        SHOW {{ showMore ? "LESS" : "MORE" }}
+      </div>
+    </div>
+    <div class="buy-btn">Buy Now</div>
+  </div>
+  <div class="product">
+    <div class="product-heading">
+      <div>
+        <div class="product-name">Peace of mind</div>
+        <div class="terms-and-conditions">
+          <mat-icon>arrow_right_alt</mat-icon>
+          <p>Terms and conditions</p>
+        </div>
+      </div>
+      <div>
+        <div class="product-price">{{ 164 | number : "0.3-3" }} BD</div>
+        <div class="tag">Third Party Liability</div>
+      </div>
+    </div>
+    <div class="coverages" [appShow]="showMore1">
+      <div class="coverages-heading">
+        <div>Coverages</div>
+        <mat-icon class="icon">info</mat-icon>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Third Party Liability Cover</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Coverage for total or partial loss of Vehicle</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Liabilities to Third Parties</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Natural Disasters</p>
+      </div>
+      <div class="coverage">
+        <mat-icon class="icon">check_circle</mat-icon>
+        <p>Theft & Fire</p>
+      </div>
+      <div class="additional-coverages">
+        <button (click)="additionalCoverages1 = true">
+          Additional Coverages
+        </button>
+      </div>
+      <div
+        class="bottom-sheet"
+        [ngClass]="{ 'active-bottom-sheet': additionalCoverages1 }"
+      >
+        <div class="bottom-sheet-heading">
+          <div class="bottom-sheet-name">Additional Coverages</div>
+          <mat-icon class="info-icon">info</mat-icon>
+          <mat-icon class="close-icon" (click)="additionalCoverages1 = false"
+            >close</mat-icon
+          >
+        </div>
+        <div class="bottom-sheet-options">
+          <label class="option" for="option6">
+            <input id="option6" type="checkbox" />
+            <p>
+              Geographical Extension123 -
+              <span>{{ 25 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option7">
+            <input id="option7" type="checkbox" />
+            <p>
+              Natural Perils -
+              <span>{{ 15 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option8">
+            <input id="option8" type="checkbox" />
+            <p>
+              Windscreen Coverage -
+              <span>{{ 10 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+          <label class="option" for="option9">
+            <input id="option9" type="checkbox" />
+            <p>
+              Personal Accident -
+              <span>{{ 10 | number : "0.3-3" }} BD</span>
+            </p>
+          </label>
+        </div>
+      </div>
+      <div class="show-more" (click)="showMore1 = !showMore1">
+        SHOW {{ showMore1 ? "LESS" : "MORE" }}
+      </div>
+    </div>
+    <div class="buy-btn">Buy Now</div>
+  </div>
+</div>
